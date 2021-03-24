@@ -1,0 +1,45 @@
+// コンポーネント化できるものを記述
+
+// 使用方法：任意のセレクタに
+// @include sp{
+//     width:300px;
+// }
+// のように記述。
+
+$pc: 1390px;
+$tab: 960px;
+$sp: 560px;
+
+@mixin pc {
+  @media (max-width: ($pc)) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media (max-width: ($tab)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+//画像格納ディレクトリ
+$imgDir: "../img/";
+
+// color変数定義
+$color-white: #ffffff;
+
+// SP font-size
+$fz-small: 3.2vw;
+$fz-medium: 3.8vw;
+$fz-large: 4.3vw;
+$fz-Xlarge: 4.8vw;
+$fz-title: 7vw;
+$fz-subTitle: 5.4vw;
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");

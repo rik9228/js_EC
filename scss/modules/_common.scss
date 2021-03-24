@@ -1,0 +1,44 @@
+.WRAPPER {
+  max-width: 1200px;
+  width: calc(100% - 32px * 2);
+  margin: 120px auto;
+}
+
+.TITLE {
+  font-size: 28px;
+  text-align: center;
+  font-weight: 400;
+
+  @include tab {
+    font-size: $fz-title;
+  }
+}
+
+.BUTTON {
+  padding: 1em 2em;
+  border: 1px solid #000;
+  display: inline-block;
+  max-width: 375px;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+  transition: 0.4s;
+
+  &--deco {
+    background-color: #000;
+    color: #fff;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.js-active {
+  background-color: #ccc !important;
+}
+
+.js-hidden {
+  display: none !important;
+}

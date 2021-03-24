@@ -1,0 +1,34 @@
+// position:
+// ---------------------------------------- //
+@mixin position($def: relative, $t: auto, $r: auto, $b: auto, $l: auto) {
+  @if $def == abs {
+    position: absolute;
+  } @else if $def == fixed {
+    position: fixed;
+  } @else {
+    position: relative;
+  }
+  @if $t != auto and $t != n {
+    top: $t;
+  }
+  @if $r != auto and $r != n {
+    right: $r;
+  }
+  @if $b != auto and $b != n {
+    bottom: $b;
+  }
+  @if $l != auto and $l != n {
+    left: $l;
+  }
+}
+
+// @include position;
+// -> position: relative;
+
+// @include position(abs);
+// -> position: absolute;
+
+// @include position(fixed, 0, n, n, 0);
+// -> position: fixed;
+//    top: 0;
+//    left: 0;

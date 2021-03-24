@@ -1,0 +1,6 @@
+@mixin full-width() {
+  margin-left: calc((100vw - 100%) / -2);
+  margin-right: calc((100vw - 100%) / -2);
+  max-width: auto; // IE対策
+  max-width: initial;
+}

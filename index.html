@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+	<html lang="ja" class="no-js lt-ie9" prefix="og: http://ogp.me/ns#">
+	<![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="ja" class="no-js" prefix="og: http://ogp.me/ns#">
+  <!--<![endif]-->
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>DODOTOWN | アパレルECショップ</title>
+    <meta name="keywords" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=10,initial-scale=1.0" />
+    <!--    CDN FontAwesome-->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <h1><a href="index.html" class="header__homeLogo" class="shop__buttom">DODOTOWN</a></h1>
+        <a href="./confirm.html" class="header__cart confirm">カート</a>
+      </div>
+
+      <nav class="nav-bottom">
+        <input type="checkbox" id="nav-bottom-drawer" class="nav-bottom-check" />
+        <label for="nav-bottom-drawer" class="nav-bottom-drawer"></label>
+        <div class="nav-bottom__wrapper">
+          <p class="nav-bottom__text">現在の購入点数：<span class="nav-bottom__quantity">0点</span></p>
+          <p class="nav-bottom__text">現在の購入金額：<span class="nav-bottom__sum">¥0</span></p>
+
+          <div class="nav-bottom__box">
+            <a href="" class="nav-bottom__link nav-bottom__link--reset" id="reset">リセット</a>
+            <a href="./confirm.html" class="nav-bottom__link confirm">カートを見る</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="shop">
+        <div class="shop__wrapper WRAPPER">
+          <select name="example" class="shop__select">
+            <option class="option" value="all">全ての商品</option>
+            <option class="option" value="accessory">アクセサリー</option>
+            <option class="option" value="hat">帽子</option>
+            <option class="option" value="shoes">靴</option>
+            <option class="option" value="tops">トップス</option>
+            <option class="option" value="pants">パンツ</option>
+            <option class="option" value="outer">アウター</option>
+          </select>
+
+          <ul class="shop__listFrame">
+            <li class="shop__listItem">
+              <img src="./img/pic_shoes.jpg" alt="" />
+              <p class="shop__text">スニーカー</p>
+              <p class="shop__price">¥12,000</p>
+              <button class="shop__button" data-num="0" data-price="12000" data-name="スニーカー" data-category="shoes">購入</button>
+              <button class="shop__button--delete">取消</button>
+            </li>
+            <li class="shop__listItem shop__listItem--down">
+              <img src="./img/pic_down.jpg" alt="" />
+              <p class="shop__text">ダウン</p>
+              <p class="shop__price">¥50,000</p>
+              <button class="shop__button" data-num="1" data-price="50000" data-name="ダウン" data-category="outer">購入</button>
+              <button class="shop__button--delete">取消</button>
+            </li>
+            <li class="shop__listItem">
+              <img src="./img/pic_cap.jpg" alt="" />
+              <p class="shop__text">キャップ</p>
+              <p class="shop__price">¥5,000</p>
+              <button class="shop__button" data-num="2" data-price="5000" data-name="キャップ" data-category="hat">購入</button>
+              <button class="shop__button--delete">取消</button>
+            </li>
+            <li class="shop__listItem">
+              <img src="./img/pic_botts.jpg" alt="" />
+              <p class="shop__text">ブーツ</p>
+              <p class="shop__price">¥20,000</p>
+              <button class="shop__button" data-num="3" data-price="20000" data-name="ブーツ" data-category="shoes">購入</button>
+              <button class="shop__button--delete">取消</button>
+            </li>
+            <li class="shop__listItem">
+              <img src="./img/pic_lnit.jpg" alt="" />
+              <p class="shop__text">ニット</p>
+              <p class="shop__price">¥8,000</p>
+              <button class="shop__button" data-num="4" data-price="8000" data-name="ニット" data-category="tops">購入</button>
+              <button class="shop__button--delete">取消</button>
+            </li>
+            <li class="shop__listItem">
+              <img src="./img/pic_sweat.jpg" alt="" />
+              <p class="shop__text">スウェット</p>
+              <p class="shop__price">¥10,000</p>
+              <button class="shop__button" data-num="5" data-price="10000" data-name="スウェット" data-category="tops">購入</button>
+              <button class="shop__button--delete">取消</button>
+            </li>
+            <li class="shop__listItem">
+              <img src="./img/pic_denim.jpg" alt="" />
+              <p class="shop__text">デニム</p>
+              <p class="shop__price">¥15,000</p>
+              <button class="shop__button" data-num="6" data-price="15000" data-name="デニム" data-category="pants">購入</button>
+              <button class="shop__button--delete">取消</button>
+            </li>
+            <li class="shop__listItem">
+              <img src="./img/pic_skinny.jpg" alt="" />
+              <p class="shop__text">スキニー</p>
+              <p class="shop__price">¥7,000</p>
+              <button class="shop__button" data-num="7" data-price="7000" data-name="スキニー" data-category="pants">購入</button>
+              <button class="shop__button--delete">取消</button>
+            </li>
+            <li class="shop__listItem">
+              <img src="./img/pic_slacks.jpg" alt="" />
+              <p class="shop__text">スラックス</p>
+              <p class="shop__price">¥14,000</p>
+              <button class="shop__button" data-num="8" data-price="14000" data-name="スラックス" data-category="pants">購入</button>
+              <button class="shop__button--delete">取消</button>
+            </li>
+            <li class="shop__listItem">
+              <img src="./img/pic_ring.jpg" alt="" />
+              <p class="shop__text">リング</p>
+              <p class="shop__price">¥3,000</p>
+              <button class="shop__button" data-num="9" data-price="3000" data-name="リング" data-category="accessory">購入</button>
+              <button class="shop__button--delete">取消</button>
+            </li>
+            <li class="shop__listItem">
+              <img src="./img/pic_bangle.jpg" alt="" />
+              <p class="shop__text">バングル</p>
+              <p class="shop__price">¥4,000</p>
+              <button class="shop__button" data-num="10" data-price="4000" data-name="バングル" data-category="accessory">購入</button>
+              <button class="shop__button--delete">取消</button>
+            </li>
+            <li class="shop__listItem">
+              <img src="./img/pic_kneckless.jpg" alt="" />
+              <p class="shop__text">ネックレス</p>
+              <p class="shop__price">¥7,000</p>
+              <button class="shop__button" data-num="11" data-price="7000" data-name="ネックレス" data-category="accessory">購入</button>
+              <button class="shop__button--delete">取消</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

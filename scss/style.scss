@@ -1,0 +1,26 @@
+// 分割ファイルの記載
+// ※ここではサイト内で共通に使用するスタイリングを記載する
+
+// config
+@import "./setting/config";
+@import "./setting/functions";
+
+//mixin
+@import "./mixin/position";
+@import "./mixin/full-width";
+
+// base.reset
+@import "./base/reset";
+@import "./base/base";
+
+// modules
+@import "./modules/common";
+@import "./modules/header";
+@import "./modules/gnav";
+@import "./modules/fnav";
+@import "./modules/footer";
+
+// pages
+@import "./page/home";
+@import "./page/confirm";
+@import "./page/result";

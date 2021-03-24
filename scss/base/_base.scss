@@ -1,0 +1,23 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  line-height: 1;
+  color: #000000;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+img,
+video,
+object {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: none;
+  margin: 0 auto;
+}
